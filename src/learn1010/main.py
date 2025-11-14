@@ -1,5 +1,5 @@
 from learn1010.board.board import create_empty_board, print_board
-from learn1010.pieces.pieces import print_piece, piece_block_count
+from learn1010.pieces.pieces import piece_block_count
 from learn1010.pieces.generate_pieces import generate_hand
 from learn1010.logic.any_move_possible import any_move_possible
 from learn1010.logic.check_valid import can_place
@@ -7,49 +7,7 @@ from learn1010.logic.place_piece import place_piece
 from learn1010.logic.clear_full_rows_cols import clear_lines
 from learn1010.constants.pieces import PIECES_IN_HAND
 from learn1010.score.basic_score import calculate_score
-
-
-def print_hand(hand):
-    """Show the current hand with indexes."""
-    print("Current hand:")
-    for i, piece in enumerate(hand):
-        print(f"[{i}] {piece['name']}")
-        print_piece(piece)
-
-
-def get_player_move(hand):
-    """
-    Ask the player which piece to place and where.
-    Returns (piece_index, row, col) or None if player quits.
-    """
-    while True:
-        choice = input("Choose piece index (or 'q' to quit): ").strip()
-        if choice.lower() == 'q':
-            return None
-
-        # Validate piece index
-        if not choice.isdigit():
-            print("Please enter a number for the piece index.")
-            continue
-
-        piece_index = int(choice)
-        if piece_index < 0 or piece_index >= len(hand):
-            print("Invalid index. Try again.")
-            continue
-
-        # Get row
-        row_str = input("Row (0-9): ").strip()
-        col_str = input("Col (0-9): ").strip()
-
-        if not (row_str.isdigit() and col_str.isdigit()):
-            print("Row and column must be numbers. Try again.")
-            continue
-
-        row = int(row_str)
-        col = int(col_str)
-
-        return piece_index, row, col
-
+from learn1010.player.player_hand import print_hand, get_player_move
 
 def main():
     board = create_empty_board()

@@ -2,8 +2,6 @@ import importlib
 import sys
 import types
 
-import pytest
-
 from learn1010.board import board as board_pkg
 from learn1010.pieces import pieces as pieces_pkg
 from learn1010.pieces import generate_pieces as gen_pkg
@@ -11,7 +9,6 @@ from learn1010.logic import check_valid as check_valid_pkg
 from learn1010.logic import place_piece as place_piece_pkg
 from learn1010.logic import clear_full_rows_cols as clear_pkg
 from learn1010.constants.pieces import PIECES
-
 
 def setup_main_modules(any_move_fn=None, generate_hand_fn=None):
     """Install fake top-level modules 'board', 'pieces', and 'logic' into sys.modules
