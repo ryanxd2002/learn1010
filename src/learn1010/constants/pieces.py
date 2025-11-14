@@ -6,6 +6,8 @@
 #
 # 1 means the cell is part of the piece, 0 means empty (padding).
 
+PIECES_IN_HAND = 3
+
 PIECES = [
     # 1-block
     {
