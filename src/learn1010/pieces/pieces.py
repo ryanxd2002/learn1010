@@ -1,8 +1,6 @@
-from learn1010.constants.pieces import PIECES
-
-def get_all_pieces():
+def get_all_pieces(pieces):
     """Return the list of all defined pieces."""
-    return PIECES
+    return pieces
 
 def piece_block_count(piece):
     """Return how many '1' cells are in this piece."""

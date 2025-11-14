@@ -1,12 +1,12 @@
 from learn1010.pieces.pieces import get_all_pieces, print_piece
 import random
 
-def generate_hand(num_pieces: int):
+def generate_hand(num_pieces: int, pieces):
     """
     Generate a list of random pieces (the 'hand' the player can choose from).
     Pieces can repeat, which is fine for a simple version.
     """
-    all_pieces = get_all_pieces()
+    all_pieces = get_all_pieces(pieces)
     hand = [random.choice(all_pieces) for _ in range(num_pieces)]
     return hand
 

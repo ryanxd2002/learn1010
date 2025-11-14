@@ -1,8 +1,8 @@
 from learn1010.pieces.pieces import get_all_pieces, piece_block_count, print_piece
-
+from learn1010.constants.pieces import PIECES
 
 def test_get_all_pieces_structure_and_nonempty():
-    pieces = get_all_pieces()
+    pieces = get_all_pieces(PIECES)
     assert isinstance(pieces, list)
     assert len(pieces) > 0
     for p in pieces:
@@ -16,7 +16,7 @@ def test_get_all_pieces_structure_and_nonempty():
 
 
 def test_piece_block_count_matches_shape_sum():
-    pieces = get_all_pieces()
+    pieces = get_all_pieces(PIECES)
     for p in pieces:
         # compute expected count
         expected = sum(sum(row) for row in p['shape'])

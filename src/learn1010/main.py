@@ -8,11 +8,14 @@ from learn1010.logic.clear_full_rows_cols import clear_lines
 from learn1010.constants.pieces import PIECES_IN_HAND
 from learn1010.score.basic_score import calculate_score
 from learn1010.player.player_hand import print_hand, get_player_move
+from learn1010.constants.pieces import PIECES
+
+
 
 def main():
     board = create_empty_board()
     score = 0
-    hand = generate_hand(PIECES_IN_HAND)
+    hand = generate_hand(PIECES_IN_HAND, PIECES)
 
     print("Welcome to 1010 (console version)!")
     print("Fill rows/columns completely to clear them.")
@@ -63,7 +66,7 @@ def main():
         # If hand is empty, deal new 3 pieces
         if not hand:
             print("All pieces used. Dealing new hand...\n")
-            hand = generate_hand(PIECES_IN_HAND)
+            hand = generate_hand(PIECES_IN_HAND, PIECES)
 
 if __name__ == "__main__":
     main()
