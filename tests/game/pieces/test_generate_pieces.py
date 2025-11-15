@@ -1,7 +1,7 @@
 import pytest
 
-from learn1010.pieces import generate_pieces
-from learn1010.constants.pieces import PIECES
+from game.pieces import generate_pieces
+from game.constants.pieces import PIECES
 
 
 def test_generate_hand_length_and_contents(monkeypatch):

@@ -1,5 +1,5 @@
-from learn1010.board.board import create_empty_board, print_board
-from learn1010.constants.board import BOARD_SIZE
+from game.board.board import create_empty_board, print_board
+from game.constants.board import BOARD_SIZE
 
 
 def test_create_empty_board_shape_and_zeros():

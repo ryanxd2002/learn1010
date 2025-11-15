@@ -1,4 +1,4 @@
-from learn1010.logic.check_valid import can_place
+from game.logic.check_valid import can_place
 
 def any_move_possible(board, pieces):
     """

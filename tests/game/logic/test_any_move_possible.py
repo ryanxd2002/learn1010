@@ -1,9 +1,9 @@
 import copy
 
-from learn1010.logic import any_move_possible
-from learn1010.board import board as board_module
-from learn1010.constants.pieces import PIECES
-from learn1010.logic import check_valid
+from game.logic import any_move_possible
+from game.board import board as board_module
+from game.constants.pieces import PIECES
+from game.logic import check_valid
 
 
 def find_piece(name):

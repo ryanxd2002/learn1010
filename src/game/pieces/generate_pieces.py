@@ -1,4 +1,4 @@
-from learn1010.pieces.pieces import get_all_pieces, print_piece
+from game.pieces.pieces import get_all_pieces, print_piece
 import random
 
 def generate_hand(num_pieces: int, pieces):

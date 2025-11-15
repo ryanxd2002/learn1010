@@ -1,4 +1,4 @@
-from learn1010.constants.board import BOARD_SIZE
+from game.constants.board import BOARD_SIZE
 
 def create_empty_board():
     """Return a 10x10 board filled with 0s (empty cells)."""

@@ -1,6 +1,6 @@
 import copy
 
-from learn1010.logic.clear_full_rows_cols import clear_lines
+from game.logic.clear_full_rows_cols import clear_lines
 
 
 def test_clear_no_full_lines():

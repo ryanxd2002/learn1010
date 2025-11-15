@@ -1,5 +1,5 @@
-from learn1010.constants.logic import DEFAULT_VALUE
-from learn1010.logic.check_valid import can_place
+from game.constants.logic import DEFAULT_VALUE
+from game.logic.check_valid import can_place
 
 def place_piece(board, piece, row, col, value=DEFAULT_VALUE):
     """

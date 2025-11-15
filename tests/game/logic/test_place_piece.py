@@ -3,11 +3,11 @@ import sys
 
 import pytest
 
-from learn1010.logic import place_piece
-from learn1010.board import board as board_module
-from learn1010.constants.pieces import PIECES
-from learn1010.logic import check_valid
-from learn1010.constants.logic import DEFAULT_VALUE
+from game.logic import place_piece
+from game.board import board as board_module
+from game.constants.pieces import PIECES
+from game.logic import check_valid
+from game.constants.logic import DEFAULT_VALUE
 
 
 def find_piece(name):

@@ -1,8 +1,8 @@
 import pytest
 
-from learn1010.logic import check_valid
-from learn1010.board import board as board_module
-from learn1010.constants.pieces import PIECES
+from game.logic import check_valid
+from game.board import board as board_module
+from game.constants.pieces import PIECES
 
 
 def find_piece(name):

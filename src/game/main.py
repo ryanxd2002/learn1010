@@ -1,14 +1,14 @@
-from learn1010.board.board import create_empty_board, print_board
-from learn1010.pieces.pieces import piece_block_count
-from learn1010.pieces.generate_pieces import generate_hand
-from learn1010.logic.any_move_possible import any_move_possible
-from learn1010.logic.check_valid import can_place
-from learn1010.logic.place_piece import place_piece
-from learn1010.logic.clear_full_rows_cols import clear_lines
-from learn1010.constants.pieces import PIECES_IN_HAND
-from learn1010.score.basic_score import calculate_score
-from learn1010.player.player_hand import print_hand, get_player_move
-from learn1010.constants.pieces import PIECES
+from game.board.board import create_empty_board, print_board
+from game.pieces.pieces import piece_block_count
+from game.pieces.generate_pieces import generate_hand
+from game.logic.any_move_possible import any_move_possible
+from game.logic.check_valid import can_place
+from game.logic.place_piece import place_piece
+from game.logic.clear_full_rows_cols import clear_lines
+from game.constants.pieces import PIECES_IN_HAND
+from game.score.basic_score import calculate_score
+from game.player.player_hand import print_hand, get_player_move
+from game.constants.pieces import PIECES
 
 
 

@@ -1,4 +1,4 @@
-from learn1010.pieces.pieces import print_piece
+from game.pieces.pieces import print_piece
 
 def print_hand(hand):
     """Show the current hand with indexes."""

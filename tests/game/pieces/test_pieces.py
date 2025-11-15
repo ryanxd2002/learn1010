@@ -1,5 +1,5 @@
-from learn1010.pieces.pieces import get_all_pieces, piece_block_count, print_piece
-from learn1010.constants.pieces import PIECES
+from game.pieces.pieces import get_all_pieces, piece_block_count, print_piece
+from game.constants.pieces import PIECES
 
 def test_get_all_pieces_structure_and_nonempty():
     pieces = get_all_pieces(PIECES)
